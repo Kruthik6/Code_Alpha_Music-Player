@@ -1,2 +1,60 @@
 # Code_Alpha_Music-Player
 To play different music
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="MusicPlayer.css">
+</head>
+
+
+
+
+<body>
+    <div class="album-cover">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d3ca28bf-e1b7-467e-a00b-c7785be8e397" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/watch?v=aatr_2MstrI&ab_channel=CleanBandit"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+                 </div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <h1>Title</h1>
+      <p>Song Name</p>
+
+      <audio id="song">
+        <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+      </audio>
+
+      <input type="range" value="0" id="progress" />
+
+      <div class="controls">
+        <button class="backward">
+          <i class="fa-solid fa-backward"></i><h6>BACK</h6>
+        </button>
+        <button class="play-pause-btn">
+          <i class="fa-solid fa-play" id="controlIcon"></i><h6>PHASE</h6>
+        </button>
+        <button class="forward">
+          <i class="fa-solid fa-forward"></i><h6>NEXT</h6>
+        </button>
+      </div>
+    </div>
+<script src="MusicPlayer.js">
+</script>
+</body>
+</html>
+  
